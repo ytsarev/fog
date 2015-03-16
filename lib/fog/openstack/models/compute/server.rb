@@ -138,7 +138,7 @@ module Fog
         alias_method :public_ip_addresses, :floating_ip_addresses
 
         def floating_ip_address
-          floating_ip_addresses.first
+          floating_ip_addresses[1]
         end
 
         alias_method :public_ip_address, :floating_ip_address
